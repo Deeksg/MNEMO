@@ -17,3 +17,16 @@ pydantic>=2.9.2
 datasets>=3.1.0
 huggingface-hub>=0.26.2
 pandas>=2.2.3
+
+# ── Machine Learning (GNN Reputation Engine) ───────────────
+# NOTE: torch and torch-geometric are HEAVY packages.
+# Do NOT run pip install -r requirements.txt locally after adding these.
+# These install ONLY on Google Colab during Phase 4 training.
+# Local development only needs scikit-learn.
+scikit-learn==1.4.0
+
+# The following are Colab-only — listed here for documentation:
+# torch==2.2.0
+# torch-geometric==2.5.0
+# torch-scatter==2.1.2
+# torch-sparse==0.6.18
